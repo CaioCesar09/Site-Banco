@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANCO NEO QUIM </title>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    
+</head>
+
+
+
+<body>
+
+  <header>
+    
+    <div class="container">
+      <div class="saldo-text">Meu saldo disponível:</div>
+      <div class="saldo-box">
+        <p id="saldo">R$ 100,00</p>
+        <button class="saldo-button" onclick="toggleSaldo()">
+          <img src="IMG/olho copy.png" alt="Toggle saldo" width="20" height="20" style="border: none;">
+        </button>
+      </div>
+      <a href="nova_pagina.html" class="link">Ver Extrato</a>
+    </div>
+  </header>
+  
+<!-- Imagem para abrir o menu -->
+<img src="IMG/cardapio.png" alt="Menu" id="openMenuBtn" class="menu-icon">
+
+<!-- Div que representa o menu, inicialmente oculto -->
+<div id="menu" class="menu">
+
+  <ul>
+    <li>PIX</li>
+    <li>CARTÕES</li>
+    <li>TRANSF</li>
+    <li>PAGAMENTOS</li>
+    <li>SUPORTE</li>
+  </ul>
+
+</div>
+
+
+<div class="menu-pesquisa">
+  <form action="#" method="get">
+      <input type="text" name="pesquisa" placeholder="Digite sua pesquisa...">
+      <button type="submit" class="botao-pesquisa">
+          <img src="IMG/lupa.png" alt="Pesquisar">
+      </button>
+  </form>
+</div>
+
+
+<div class="grid-container">
+  <div class="grid-item">
+    <h1 class="box1">PIX</h1>
+    <img src="IMG/pix.png" alt="Imagem" class="img1">
+</div>
+  <div class="grid-item">
+    <h2 class="box2">TRANSFERÊNCIAS</h2>
+    <img src="IMG/Tranferencia.png" alt="Imagem" class="img2">
+
+  </div>
+  <div class="grid-item">
+    <h1 class="box3">CARTÕES</h1>
+    <img src="IMG/cartoes.png" alt="Imagem" class="img3">
+  </div>
+  <div class="grid-item">
+    <h1 class="box4">PAGAMENTOS</h1>
+    <img src="IMG/Pagamentos.png" alt="Imagem" class="img4">
+  </div>
+</div>
+
+
+<img src="IMG/neo_quim_04-removebg-preview.png" alt="Imagem" class="imagem-posicionada">
+
+
+<button id="botao">
+
+    <img src="IMG/sair.png" alt="Botão">
+
+</button> 
+
+    <script src="JavaScript/script.js"></script>
+
+    </body>
+    
+    
+    </html>
+    
+        
+
+    
+    
+    

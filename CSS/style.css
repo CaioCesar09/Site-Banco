@@ -1,0 +1,255 @@
+body{
+
+  background-color: #2c0c2c;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+
+/*CSS tela Login*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+input[type="email"],
+input[type="password"],
+button {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #000000;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #2c0c2c;
+}
+img {
+  position: absolute;
+  top: 45px; /* ajuste conforme necessário */
+  
+}
+
+/*CSS Tela do Banco*/
+.container {
+  position: relative;
+}
+.saldo-box {
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.saldo-button {
+  position: absolute;
+  top: 0%;
+  left: 25;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.link {
+  text-decoration: underline;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 100%;
+}
+.saldo-text {
+  color: #ffffff;
+}
+header {
+  position: absolute; /* para movimentar o retângulo para onde você precisa */
+  top: 50px; /* ajuste a posição vertical */
+  left: 100px; /* ajuste a posição horizontal */
+}
+
+.imagem-posicionada {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 150px;
+  justify-content: center;
+}
+
+.grid-item {
+  width: 300px;
+  height: 170px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden; /* Adicione essa propriedade */
+}
+
+.img1 {
+  width: 5%;
+  height: auto;
+  position: absolute;
+  top: 31%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+}
+.box1 {
+  position: absolute;
+  top: 27%;
+  left: 37%; /* Distância da esquerda */
+}
+.img2 {
+  width: 5%;
+  height: auto;
+  position: absolute;
+  top: 30%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+}
+.box2 {
+  position: absolute;
+  top: 27%;
+  left: 60%; /* Distância da esquerda */
+}
+.img3 {
+  width: 5%;
+  height: auto;
+  position: absolute;
+  top: 68%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+}
+.box3 {
+  position: absolute;
+  top: 65%;
+  left: 35%; /* Distância da esquerda */
+}
+.img4 {
+  width: 4%;
+  height: auto;
+  position: absolute;
+  top: 69%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+}
+.box4 {
+  position: absolute;
+  top: 65%;
+  left: 59%; /* Distância da esquerda */
+}
+
+.menu-pesquisa {
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.menu-pesquisa form {
+  display: flex;
+  align-items: center;
+}
+
+.menu-pesquisa input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.menu-pesquisa .botao-pesquisa {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0px;
+  border-radius: 0 5px 5px 0;
+  top: 31px;
+  left: 66%;
+}
+
+.menu-pesquisa .botao-pesquisa img {
+  max-width: 5%;
+  top: 31px;
+  left: 66%;
+}
+
+
+/*CSS JAVA*/
+
+/* Estilos para a imagem do botão */
+.menu-icon {
+  position: fixed; /* Posição fixa na tela */
+  top: 20px; /* Distância do topo */
+  left: 20px; /* Distância da esquerda */
+  width: 40px; /* Largura da imagem */
+  height: auto; /* Altura automática proporcional */
+  cursor: pointer; /* Cursor ao passar sobre a imagem */
+}
+
+/* Estilos para o menu */
+.menu {
+  display: none; /* Inicialmente oculto */
+  position: absolute; /* Posicionamento absoluto em relação ao botão */
+  top: calc(20px + 40px); /* Posicionamento abaixo do botão (20px de distância do topo + altura da imagem) */
+  left: 20px; /* Alinhado à esquerda do botão */
+  background-color: #fff; /* Cor de fundo branca */
+  padding: 20px; /* Espaçamento interno */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Estilos para a lista dentro do menu */
+.menu ul {
+  list-style-type: none; /* Removendo marcadores de lista */
+  padding: 0; /* Removendo preenchimento padrão */
+}
+
+/* Estilos para os itens da lista */
+.menu ul li {
+  margin-bottom: 10px; /* Espaçamento entre os itens */
+  cursor: pointer; /* Cursor ao passar sobre os itens */
+}
+
+/* Estilos para itens da lista quando o mouse passa sobre eles */
+.menu ul li:hover {
+  color: #2c0c2c; /* Mudando a cor do texto para azul */
+}
+#botao {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 9999; /* Para garantir que o botão esteja sempre acima de outros elementos */
+}
+
+#botao img {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+}
